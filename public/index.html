@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta property="og:url" content="https://070ry.pages.dev/public" />
+    <meta property="url" content="https://070ry.pages.dev/public" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EasyCSS - 070ry" />
+    <meta property="title" content="EasyCSS - 070ry" />
+    <meta property="og:description" content="CSSを作るのがだるい人向け(主に自分)のCSS" />
+    <meta property="description" content="CSSを作るのがだるい人向け(主に自分)のCSS" />
+    <meta property="og:site_name" content="070ry" />
+    <meta property="og:image" content="/assets/favicon/512.png" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest?v=2" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=2" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=2" />
+    <link rel="stylesheet" href="/assets/css/chroma.css" />
+    <title>EasyCSS - 070ry</title>
+    <script src="/assets/js/script.js"></script>
+    <style>
+      * {
+        user-select: none;
+      }
+      body {
+        background: #888888;
+      }
+      .discord {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        max-width: 128px;
+        max-height: 128px;
+        z-index: -99;
+      }
+      .header {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        max-width: 320px;
+        border-radius: 32px;
+        text-align: center;
+        z-index: 1;
+        backdrop-filter: blur(3px);
+        height: max-content;
+        background-image: linear-gradient(90deg, rgba(170, 170, 170, 0.2), rgba(226, 226, 226, 0.2));
+      }
+      .hd {
+        padding: 4px;
+        border-radius: 32px;
+        font-size: 20px;
+        font-style: bold;
+        text-decoration: none;
+        transition: 0.25s;
+        z-index: 1;
+      }
+      .hd:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+      }
+      *:focus {
+        border-radius: 16px;
+        outline: 4px solid rgba(255, 192, 203, 0.616);
+      }
+      .dsh {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+      }
+      .s {
+        text-shadow: 0px 0px 4px rgba(44, 44, 44, 0.6);
+      }
+      a,
+      a:visited {
+        color: rgb(236, 236, 236);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header dsh s">
+      <a class="hd" href="/home" target="_self">Home</a><span class="chroma"> ●</span>
+      <a class="hd" href="/license" target="_blank" rel="noopener noreferrer">License</a>
+    </div>
+    <img class="discord ds" src="/assets/img/discord.png" />
+  </body>
+</html>

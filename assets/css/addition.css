@@ -1,0 +1,52 @@
+details.sb {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  max-width: 75%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin: auto auto 8px auto;
+}
+ol.oc {
+  border-top: #ffffff;
+  border-radius: 2px;
+  padding-top: 3px;
+  width: 320px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+summary {
+  list-style: none;
+  text-align: center;
+}
+summary.ca {
+  user-select: none;
+  border-radius: 16px;
+  background-color: rgba(212, 212, 212, 0.068);
+  border: 2px solid rgba(156, 153, 154, 0.473);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60px;
+  margin: 0 auto;
+  color: #6659d8;
+  text-decoration: underline;
+}
+
+summary.ca:hover {
+  background-color: rgba(212, 212, 212, 0.26);
+}
+summary.ca:active {
+  background-color: rgba(212, 212, 212, 0.466);
+  font-weight: bolder;
+}
+.glow {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.glow:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.glow:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}

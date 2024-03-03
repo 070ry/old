@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8>
+    <meta property="og:url" content="https://070ry.pages.dev/hp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Browser Homepage - 070ry" />
+    <meta property="og:description" content="是非ブラウザのホームページとして使ってください。" />
+    <meta property="og:site_name" content="070ry" />
+    <meta property="og:image" content="https://070ry.pages.dev/assets/favicon/android-chrome-512x512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/hp.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest?v=2" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=2" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=2" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=2" />
+    <meta name="theme-color" content="#0f1124" />
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/time.js"></script>
+    <script>
+      setInterval(displayTime, 1000);
+      function copy(id) {
+        const text = document.getElementById(id);
+        const tt = document.getElementById('tt');
+        navigator.clipboard.writeText(text.textContent);
+        tt.textContent = 'Copied!';
+        text.classList.add('green');
+        tt.classList.add('green');
+        setInterval(function () {
+          tt.textContent = 'Click to copy';
+          text.classList.remove('green');
+          tt.classList.remove('green');
+        }, 5000);
+      }
+      function search() {
+        const input = document.getElementById('search');
+        if (!input.value) return;
+        location.href = `https://google.com/search?q=${input.value}`;
+      }
+    </script>
+    <title>Browser Homepage</title>
+  </head>
+  <body class="shadow box-shadow" onload="displayTime()">
+    <h1>Welcome back</h1>
+    <div class="tt">
+      <div id="tt" class="ttt tr">Click to copy</div>
+      <p id="ct" onclick="copy('ct')">準備中...</p>
+    </div>
+    <div style="margin-bottom: 12px">
+      <input class="o tr" placeholder="Google Search" id="search" onkeydown="if(event.keyCode===13){search()}" />
+      <input id="btn" class="o tr" type="submit" value="Search" onclick="search()" /><br />
+    </div>
+    <button class="l" onclick="location.href='https://aternos.me/server'">Aternos</button>
+    <button class="l" onclick="location.href='https://chat.openai.com'">ChatGPT</button>
+    <button class="l" onclick="location.href='https://discord.com/app'">Discord</button>
+    <button class="l" onclick="location.href='https://github.com'">Github</button>
+    <button class="l" onclick="location.href='https://mail.google.com'">GMAIL</button>
+    <button class="l" onclick="location.href='https://open.spotify.com'">Spotify</button>
+    <button class="l" onclick="location.href='https://x.com'">X</button>
+    <button class="l" onclick="location.href='https://xbox.com/play'">Xbox</button>
+    <button class="l" onclick="location.href='https://youtube.com'">YouTube</button>
+    <details>
+      <summary id="apps" class="o" onclick="document.getElementById('apps').blur()">Apps</summary>
+      <div>(*)このアプリはPCのみで動作します。</div>
+      <button class="l" onclick="location.href='discord://-/channels/@me'">Discord*</button>
+      <button class="l" onclick="location.href='minecraft:'">Minecraft</button>
+      <button class="l" onclick="location.href='osu:'">osu!</button>
+      <button class="l" onclick="location.href='roblox:'">Roblox</button>
+      <button class="l" onclick="location.href='ms-settings:home'">設定*</button>
+      <button class="l" onclick="location.href='steam:'">Steam*</button>
+    </details>
+    <details>
+      <summary id="other" class="o" onclick="document.getElementById('other').blur()">Other Links</summary>
+      <button class="l" onclick="location.href='https://www.mirrativ.com/broadcast/prepare'">Mirrativ</button>
+      <button class="l" onclick="location.href='https://scratch.mit.edu'">Scratch</button>
+      <button class="l" onclick="location.href='https://mail.proton.me/u/0/inbox'">ProtonMail</button>
+      <button class="l" onclick="location.href='https://m.kuku.lu'">捨てアド</button>
+      <button class="l" onclick="location.href='/app/ua'">UserAgent</button>
+      <button class="l" onclick="location.href='/app/ゲーミングdiscord'">Gaming Discord</button>
+    </details>
+    <box></box>
+    <button class="l la o" onclick="location.href='/about.html'">About</button>
+  </body>
+</html>

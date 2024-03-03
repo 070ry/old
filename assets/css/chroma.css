@@ -1,0 +1,37 @@
+.chroma {
+  animation: chroma 4s linear infinite;
+}
+.chroma_bg {
+  animation: chroma_bg 4s linear infinite;
+}
+.ds {
+  filter: drop-shadow(5px 5px 20px rgba(62, 62, 62, 0.35));
+}
+@keyframes chroma {
+  0% {
+    color: Magenta;
+  }
+  33% {
+    color: yellow;
+  }
+  66% {
+    color: Cyan;
+  }
+  100% {
+    color: Magenta;
+  }
+}
+@keyframes chroma_bg {
+  0% {
+    background-color: Magenta;
+  }
+  33% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: Cyan;
+  }
+  100% {
+    background-color: Magenta;
+  }
+}

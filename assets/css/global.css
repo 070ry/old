@@ -1,0 +1,140 @@
+* {
+  max-width: 100%;
+  max-height: 100%;
+}
+*:focus {
+  border-radius: 16px;
+  outline: 4px solid rgba(255, 192, 203, 0.616);
+}
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #040616;
+  color: white;
+  text-align: center;
+}
+h1 {
+  padding: 32px;
+}
+
+a.b {
+  color: white;
+  text-align: center;
+  cursor: default;
+}
+a.b:hover {
+  color: orangered;
+  font-style: italic;
+}
+a.c {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  max-width: 100%;
+  margin: 4px;
+  padding: 8px;
+}
+a.c:hover {
+  color: rgb(255, 0, 85);
+  background: #07324b;
+}
+a.fb {
+  color: white;
+  cursor: default;
+  font-size: 20px;
+}
+a.fb:hover {
+  color: rgb(214, 57, 0);
+  font-style: italic;
+}
+button.i {
+  cursor: pointer;
+  border-radius: 16px;
+  width: 240px;
+  padding: 0;
+  background-color: unset;
+  border-style: unset;
+}
+.l {
+  color: white;
+  background-color: #6464643a !important;
+  border-radius: 16px;
+  border-style: none !important;
+  margin: 5px auto 20px;
+  padding: 8px;
+  width: auto;
+  text-align: center;
+  font-size: 20px;
+  user-select: none;
+}
+.l:hover {
+  background-color: #6464648e !important;
+}
+div.d {
+  text-align: center;
+  max-width: 80%;
+}
+div.sb {
+  overflow: hidden;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding-left: auto;
+  max-width: 75%;
+  font-weight: bold;
+  margin: auto auto 8px auto;
+}
+div.t {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+img {
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+p.list {
+  text-align: center;
+}
+.cp {
+  font-size: 18px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.f {
+  border-top: #ffffff;
+  border-radius: 2px;
+  padding: 16px;
+}
+.top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: 1s;
+  opacity: 0.7;
+  cursor: pointer;
+  user-select: none;
+  margin: 8px;
+  padding: 16px !important;
+  text-align: center;
+  color: #cfcfcf;
+  background: #07324b;
+}
+.jfk-bubble,
+.gtx-bubble {
+  visibility: hidden;
+  display: none;
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+.shadow {
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+}
+.bs {
+  box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.7);
+}

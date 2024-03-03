@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta meta="og:url" content="https://070ry.pages.dev/hp" />
+    <meta meta="og:type" content="website" />
+    <meta meta="og:title" content="070ry" />
+    <meta meta="og:description" content="070ryのホームページです" />
+    <meta name="og:site_name" content="070ry" />
+    <meta name="og:image" content="https://070ry.pages.dev/assets/favicon/android-chrome-512x512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest?v=2" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=2" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=2" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=2" />
+    <meta name="theme-color" content="#0f1124" />
+    <script src="/assets/js/script.js"></script>
+    <script>
+      console.log('%c404', 'font-size:64px;color:rgb(160,0,0);font-weight:bold');
+      console.log(`${location.href} is unavailable.\nRedirect in 5 seconds...`);
+      setTimeout(function () {
+        // console.log('debug');
+        location.href = '/home.html';
+      }, 5000);
+    </script>
+    <style>
+      html {
+        background-color: #131313;
+        scroll-behavior: smooth;
+        user-select: none;
+        text-align: center;
+        font-size: 64px;
+        max-width: 100%;
+        max-height: 100%;
+        position: static;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(192, 192, 192);
+        background-color: rgb(31, 31, 31);
+        box-shadow: 1px 1px 5px 1px rgb(0, 0, 0, 0.6);
+        border-radius: 8px;
+        padding: 48px 128px;
+      }
+      button {
+        color: white;
+        background-color: #0000003a !important;
+        border-radius: 24px;
+        border-style: none !important;
+        margin: 5px auto 20px;
+        padding: 8px;
+        width: auto;
+        font-size: 20px;
+      }
+      button:hover {
+        cursor: pointer;
+        outline: 4px solid rgba(255, 192, 203, 0.616);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <div><img src="/assets/img/1f974.svg" /></div>
+      <button onclick="location.href='/home'">Home</button>
+    </div>
+  </body>
+</html>

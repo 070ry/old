@@ -1,0 +1,132 @@
+h1 {
+  margin: 0;
+}
+input#search {
+  background-color: transparent;
+  outline: 4px solid rgba(255, 192, 203, 0);
+}
+input#search:hover,
+input#search:focus,
+input#search:active {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(107, 107, 107, 0.25);
+}
+input#btn {
+  background-color: #6464643a;
+  user-select: none;
+}
+input#btn:focus,
+input#btn:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(99, 99, 99, 0.55);
+}
+input#search,
+input#btn {
+  border-radius: 12px;
+  padding: 8px;
+  color: white;
+  font-size: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.l {
+  margin: 4px 2px;
+  padding: 12px;
+  border-radius: 12px;
+}
+#btn:focus,
+#btn:hover,
+#search:focus,
+#search:hover,
+.l:focus,
+.l:hover,
+.o:focus,
+.o:focus,
+.o:hover {
+  outline: 4px solid rgba(245, 60, 174, 0.6);
+}
+#search:active,
+#btn:active,
+.l:active,
+.t:active,
+.o:active,
+summary:active {
+  outline: 4px solid rgb(255, 67, 161);
+}
+.o,
+.l {
+  outline: 4px solid rgba(255, 192, 203, 0);
+}
+.tr,
+.l {
+  transition: all 0.2s linear;
+}
+div#ct {
+  padding-bottom: 24px;
+  margin: 12px;
+  padding: 2px;
+}
+div#ct:hover {
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
+div#clock {
+  width: min-content;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.tt {
+  position: sticky;
+  padding: 3px;
+  margin: 0 auto;
+  width: fit-content;
+}
+.ttt {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  bottom: -30px;
+  display: inline-block;
+  padding: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  background: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  border-radius: 16px;
+}
+.tt:hover .ttt {
+  opacity: 1;
+  visibility: visible;
+}
+.green {
+  background-color: rgba(81, 223, 5, 0.6);
+}
+details {
+  margin-top: 16px;
+}
+summary {
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: #6464643a;
+  width: max-content;
+  margin: 8px auto;
+}
+.la {
+  position: fixed;
+  bottom: 12px;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  left: 50%;
+  backdrop-filter: blur(4px);
+  background-color: #050430a4 !important;
+  transform: translateX(-50%);
+}
+box {
+  padding:48px;
+  pointer-events: none;
+}
